@@ -316,7 +316,8 @@
     words($("#s2 .t"), 8.8, .08);
     let t = 9.2;
     messy.querySelectorAll(".hw").forEach(l => { t = write(l, t, 1150) + .06; });
-    drawPath($("#cross path"), t + .3, .8);
+    const crossAt = t + .3;
+    drawPath($("#cross path"), crossAt, .8);
     tw(messy, t + 1.4, .9, [{ opacity: 1, transform: "rotate(-3deg)", filter: "blur(0px)" },
       { opacity: 1, transform: "translate(40px, 30px) rotate(6deg) scale(.6) skewX(8deg)", filter: "blur(0px)", offset: .45 },
       { opacity: 0, transform: "translate(160px, 420px) rotate(38deg) scale(.15) skewX(20deg)", filter: "blur(4px)" }], "cubic-bezier(.5,0,.75,0)", "forwards");
@@ -428,6 +429,8 @@
     tw($("#brush"), t + .3, .8, [{ clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0 0 0)" }], "cubic-bezier(.5,0,.2,1)");
     words($("#s9sub .t"), t + 1.0, .07);
     window.DURATION = t + 6.5;
+    // Scene markers, used to time the music score (music/compose.py).
+    window.MARKS = { cross: crossAt, s3, s4, s5, s6, ask, s6end, s7, s8, shift, s8end, s9, end: window.DURATION };
     tw($("#fadeout"), window.DURATION - .8, .8, [{ opacity: 0 }, { opacity: 1 }], "ease-in", "both");
   }
 

@@ -30,3 +30,15 @@ node render.mjs                          # writes the-blank-page.mp4 (60fps)
 node render.mjs out.mp4 30 --workers 4   # 30fps, 4 parallel workers
 node render.mjs --stills 10,30,60 ./     # PNG preview frames
 ```
+
+## Music
+
+`music/` holds an original score composed for this piece, so there's nothing to license. `compose.py` writes `score.mid`, timed to the scene markers in `marks.json`. `render.sh` plays it through FluidSynth with the FluidR3 General MIDI piano and strings, then masters it to `score.wav`.
+
+```bash
+# after changing timings in index.html, re-export marks.json, then:
+music/render.sh
+ffmpeg -i the-blank-page.mp4 -i music/score.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out.mp4
+```
+
+The score follows the story: tender solo piano for the opening, anxious low strings that swell as the list is crossed out, gentle piano for the blank page, warm strings for the feeling words, a build into "Are the words I'm about to use…", a lift at the focus shift, and a resolution on D major at the close.
