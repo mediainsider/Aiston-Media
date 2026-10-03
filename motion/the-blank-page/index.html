@@ -117,6 +117,10 @@
   #cardA .label { color: #9fb0c8; } #cardA .label::before { background: #9fb0c8; }
   .card .t { font-size: 54px; font-weight: 800; line-height: 1.12; }
   #cardB .t { font-size: 50px; }
+  .card .sub { margin-top: 20px; font-size: 23px; white-space: nowrap; font-weight: 700; color: #8fa2bd; letter-spacing: .02em; }
+  #topic { left: 74px; top: 56px; font-weight: 700; font-size: 19px; letter-spacing: .2em; text-transform: uppercase; color: #bfe9f5; display: flex; align-items: center; gap: 14px; }
+  #topic i { width: 12px; height: 12px; border-radius: 50%; background: #ff4d5e; box-shadow: 0 0 14px #ff4d5e; }
+  #s9sub { font-size: 38px; font-weight: 700; color: #cfe3f5; }
   .card .ic { position: absolute; right: 44px; top: 36px; width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; }
   #cardA .ic { background: #3a4a66; }
   #cardB .ic { background: #5cc8f1; }
@@ -144,24 +148,24 @@
 
   <!-- S1: opening -->
   <div id="s1icon" class="abs" style="left:896px;top:200px"><div class="disc"><svg viewBox="-40 -40 80 80"><path class="beat" d="M0 28 C-10 20 -32 6 -32 -10 C-32 -22 -22 -29 -13 -29 C-6 -29 -2 -25 0 -21 C2 -25 6 -29 13 -29 C22 -29 32 -22 32 -10 C32 6 10 20 0 28 Z" fill="none" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/></svg></div></div>
-  <div id="s1" class="abs center" style="top:395px">
-    <div class="label">Something to take away</div>
-    <div class="big t" style="font-size:80px">If you’re thinking about talking to<br><em class="hl">somebody you love…</em></div>
+  <div id="s1" class="abs center" style="top:372px">
+    <div class="label">Talking to someone about their addiction</div>
+    <div class="big t" style="font-size:78px">If you’re thinking about talking to<br><em class="hl">somebody you love</em><br>about their <em class="hl">addiction…</em></div>
   </div>
 
   <!-- S2: the wrong way -->
   <div id="messy" class="abs paper">
     <div class="hw u" style="left:52px;top:34px;font-weight:700;font-size:48px">Things I need to say:</div>
-    <div class="hw" style="left:58px;top:112px;transform:rotate(-1deg)">You have to stop. Now.</div>
+    <div class="hw" style="left:58px;top:112px;transform:rotate(-1deg)">You have to stop drinking. Now.</div>
     <div class="hw" style="left:50px;top:174px;transform:rotate(.6deg)">Do you know what this is doing to us?</div>
     <div class="hw" style="left:62px;top:236px;transform:rotate(-.8deg)">I found the empties again</div>
-    <div class="hw r" style="left:54px;top:298px;transform:rotate(1deg)">You promised me last time!</div>
-    <div class="hw" style="left:60px;top:360px;transform:rotate(-1.2deg)">Why can’t you just…</div>
-    <div class="hw" style="left:48px;top:422px;transform:rotate(.4deg)">Everyone is worried sick</div>
-    <div class="hw" style="left:66px;top:484px;transform:rotate(-.6deg)">You’re wasting your life</div>
+    <div class="hw r" style="left:54px;top:298px;transform:rotate(1deg)">You promised you’d stop using!</div>
+    <div class="hw" style="left:60px;top:360px;transform:rotate(-1.2deg)">Where did the money go?</div>
+    <div class="hw" style="left:48px;top:422px;transform:rotate(.4deg)">Everyone knows you have a problem</div>
+    <div class="hw" style="left:66px;top:484px;transform:rotate(-.6deg)">You’re killing yourself</div>
     <div class="hw r u" style="left:52px;top:546px;transform:rotate(.9deg)">This HAS to change</div>
-    <div class="hw" style="left:58px;top:608px;transform:rotate(-1deg)">If you don’t stop I’ll…</div>
-    <div class="hw r" style="left:50px;top:670px;transform:rotate(.7deg)">You need help!!</div>
+    <div class="hw" style="left:58px;top:608px;transform:rotate(-1deg)">Go to rehab or I’ll…</div>
+    <div class="hw r" style="left:50px;top:670px;transform:rotate(.7deg)">Just STOP!!</div>
     <svg id="cross" class="abs" style="left:0;top:0" width="660" height="830" viewBox="0 0 660 830">
       <path pathLength="1" d="M40 90 L600 160 L60 240 L610 320 L50 400 L620 470 L60 560 L600 630 L70 700 L590 760" fill="none" stroke="#e3161f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1" opacity=".88"/>
     </svg>
@@ -206,7 +210,7 @@
 
   <!-- S7 -->
   <div id="s7" class="abs center" style="top:400px">
-    <div class="big t" style="font-size:80px">That’s a very different way to prepare<br>for a <em class="hl">difficult conversation.</em></div>
+    <div class="big t" style="font-size:72px">That’s a very different way to prepare for<br>a <em class="hl">difficult conversation about addiction.</em></div>
   </div>
 
   <!-- S8: the shift -->
@@ -215,6 +219,7 @@
     <div class="ic"><svg width="46" height="46" viewBox="-24 -24 48 48" fill="none" stroke="#c9d4e4" stroke-width="5" stroke-linecap="round"><path d="M0 -16 V5"/><circle cx="0" cy="15" r="1.5" fill="#c9d4e4"/></svg></div>
     <div class="label">Away from</div>
     <div class="t">“How do I make them change?”</div>
+    <div class="sub">stop drinking · stop using · stop gambling</div>
   </div>
   <div id="cardB" class="abs card">
     <div class="ic"><svg width="52" height="52" viewBox="-26 -26 52 52" fill="none" stroke="#0b1a33" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"><path d="M-22 -16 H6 Q10 -16 10 -12 V0 Q10 4 6 4 H-8 L-16 11 V4 H-22 Q-26 4 -26 0 V-12 Q-26 -16 -22 -16 Z" transform="translate(4 -2)"/><path d="M14 -2 H22 Q26 -2 26 2 V12 Q26 16 22 16 H20 V22 L13 16 H2 Q-2 16 -2 12 V10" transform="translate(-2 0)"/></svg></div>
@@ -234,6 +239,8 @@
     <path filter="url(#rough)" fill="#e3161f" d="M2 40 C60 30 180 18 380 13 C520 10 640 12 726 20 C700 26 690 30 712 34 C600 38 500 42 400 45 C270 49 150 54 60 58 C30 59 12 56 4 50 Z"/>
   </svg>
 
+  <div id="s9sub" class="abs center" style="top:690px"><div class="t">Lead with <em class="hl">love</em> when you talk to someone about their addiction.</div></div>
+  <div id="topic" class="abs"><i></i>Talking to a loved one about addiction</div>
   <div id="vignette" class="abs"></div>
   <div id="fadein" class="abs"></div>
   <div id="fadeout" class="abs"></div>
@@ -295,17 +302,19 @@
 
   function build() {
     // ---------- S1 · opening ----------
+    show($("#topic"), 1.6, 1.0, "translateX(-30px)");
+    tw($("#topic i"), 2.6, 1.6, [{ opacity: 1 }, { opacity: .35 }, { opacity: 1 }], "ease-in-out", "none", { iterations: Infinity });
     pop($("#s1icon"), 1.0); beat($("#s1icon .beat"), 2.4);
     show($("#s1 .label"), 1.3, .8);
     words($("#s1 .t"), 1.6, .09);
-    [$("#s1icon"), $("#s1")].forEach(e => hide(e, 6.9));
+    [$("#s1icon"), $("#s1")].forEach(e => hide(e, 7.6));
 
     // ---------- S2 · the wrong way ----------
     const messy = $("#messy");
-    tw(messy, 7.4, 1.0, [{ opacity: 0, transform: "translateX(-140px) rotate(-9deg)" }, { opacity: 1, transform: "rotate(-3deg)" }]);
-    show($("#s2 .label"), 7.8, .8);
-    words($("#s2 .t"), 8.0, .08);
-    let t = 8.4;
+    tw(messy, 8.2, 1.0, [{ opacity: 0, transform: "translateX(-140px) rotate(-9deg)" }, { opacity: 1, transform: "rotate(-3deg)" }]);
+    show($("#s2 .label"), 8.6, .8);
+    words($("#s2 .t"), 8.8, .08);
+    let t = 9.2;
     messy.querySelectorAll(".hw").forEach(l => { t = write(l, t, 1150) + .06; });
     drawPath($("#cross path"), t + .3, .8);
     tw(messy, t + 1.4, .9, [{ opacity: 1, transform: "rotate(-3deg)", filter: "blur(0px)" },
@@ -417,7 +426,8 @@
     pop($("#s9icon"), s9); beat($("#s9icon .beat"), s9 + 1.2);
     t = words($("#s9 .t"), s9 + .4, .12);
     tw($("#brush"), t + .3, .8, [{ clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0 0 0)" }], "cubic-bezier(.5,0,.2,1)");
-    window.DURATION = t + 5.5;
+    words($("#s9sub .t"), t + 1.0, .07);
+    window.DURATION = t + 6.5;
     tw($("#fadeout"), window.DURATION - .8, .8, [{ opacity: 0 }, { opacity: 1 }], "ease-in", "both");
   }
 
